@@ -90,7 +90,9 @@ document.addEventListener('DOMContentLoaded', () => {
             square3.classList.contains('player-one') &&
             square4.classList.contains('player-one') 
         ){
-            result.innerHTML = 'Player one wins!'
+            result.innerHTML = 'one you WON!'
+            card.setAttribute('class', 'card')
+            congrats.setAttribute('class', 'congrats-seen')
         }
         //Check if player two won
         if (
@@ -99,7 +101,9 @@ document.addEventListener('DOMContentLoaded', () => {
             square3.classList.contains('player-two') &&
             square4.classList.contains('player-two') 
         ){
-            result.innerHTML = 'Player two wins!'
+            result.innerHTML = 'two you WON!'
+            card.setAttribute('class', 'card')
+            congrats.setAttribute('class', 'congrats-seen')
         }
     }
     }
@@ -128,14 +132,26 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     //used for intro and a button to start the game
 
+    const restartButton = document.querySelector('.restart')
+    const congrats = document.querySelector('.congrats')
     const startButton = document.querySelector('#start-button')
     const card = document.querySelector('.card')
     const intro = document.querySelector('.intro')
     startButton.addEventListener('click', startGame)
+    restartButton.addEventListener('click', restartGame)
 
     function startGame(){
         card.setAttribute('class', 'card-seen')
         intro.setAttribute('class', 'intro-gone')
+    }
+    function restartGame(){
+        card.setAttribute('class', 'card-seen')
+        congrats.setAttribute('class', 'congrats')
+        for (let s = 0;s < 42; s++){
+            squares[s].classList.remove('taken')
+            squares[s].classList.remove('player-one')
+            squares[s].classList.remove('player-two')
+        }
     }
 
 })

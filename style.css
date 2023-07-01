@@ -18,7 +18,16 @@
     height: 250px;
     border:3px solid black;
 }
+.congrats{
+    display: none;
+}
+.congrats-seen{
+    display: grid;
+    display: all;
+    text-align: center;
+}
 #start-button{
+    color:WHITE;
     background-color: rgb(20, 214, 20);
     border: 0px solid red;
     border-radius: 10px;
@@ -27,6 +36,17 @@
 #start-button:hover{
     cursor: pointer;
     background-color: green;
+}
+.restart{
+    color: white;
+    background-color: lightblue;
+    border: 0px solid red;
+    border-radius: 10px;
+    padding: 20px 15px;
+}
+.restart:hover{
+    cursor: pointer;
+    background-color: skyblue;
 }
 .grid div {
     height: 40px;
