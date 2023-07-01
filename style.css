@@ -1,19 +1,31 @@
 .grid{
-    border: 1px solid;
     height: 240px;
     width: 280px;
     display: flex;
     flex-wrap: wrap;
+    border: 5px dashed lime;
+    margin: 20px;
+    background: rgb(218, 218, 218);
 }
 .grid div {
     height: 40px;
     width: 40px;
 }
+.card{
+    text-align: center;
+}
 .player-one {
-    background-color: red;
+    background-color: blue;
     border-radius: 20px;
 }
 .player-two {
-    background-color: blue;
+    background-color: red;
     border-radius: 20px;
+}
+body {
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background: rgb(90, 94, 95);
 }

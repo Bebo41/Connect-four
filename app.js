@@ -3,6 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const result = document.querySelector('#result')
     const displayPlayer = document.querySelector('#currentPlayer')
     let currentPlayer = 1
+    //thanks freecodecamp.org for all the possible chances of connect four win
     const winningPlayer = [
     [0, 1, 2, 3],
     [41, 40, 39, 38],
