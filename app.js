@@ -1,4 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
+    //used for game functionality
     const squares = document.querySelectorAll('.grid div')
     const result = document.querySelector('#result')
     const displayPlayer = document.querySelector('#currentPlayer')
@@ -106,7 +107,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     for (let i = 0; i < squares.length; i++){
         squares[i].onclick = () => {
-            //if the square below your current square is taken, you can ontop of it
+            //if the square below your current square is taken, you can go ontop of it
             if (squares[i + 7].classList.contains('taken') &&! squares[i].classList.contains('taken')){
                 if (currentPlayer == 1){
                     squares[i].classList.add('taken')
@@ -124,6 +125,17 @@ document.addEventListener('DOMContentLoaded', () => {
             }
             getResult()
         }
+    }
+    //used for intro and a button to start the game
+
+    const startButton = document.querySelector('#start-button')
+    const card = document.querySelector('.card')
+    const intro = document.querySelector('.intro')
+    startButton.addEventListener('click', startGame)
+
+    function startGame(){
+        card.setAttribute('class', 'card-seen')
+        intro.setAttribute('class', 'intro-gone')
     }
 
 })
