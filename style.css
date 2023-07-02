@@ -103,3 +103,10 @@ a{
 p{
     color: grey;
 }
+.download{
+    margin-top: 10px;
+    color: red;
+    padding: 10px;
+    background: lime;
+    border: solid 5px red;
+}
