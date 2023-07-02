@@ -1,9 +1,10 @@
 .grid{
-    height: 240px;
-    width: 280px;
+    height: 300px;
+    width: 340px;
     display: flex;
     flex-wrap: wrap;
-    border: 5px dashed lime;
+    border: 8px rgb(50, 205, 166) double;
+    border-top:none;
     margin: 20px;
     background: hsl(0, 100%, 100%);
 }
@@ -28,29 +29,36 @@
 }
 #start-button{
     color:WHITE;
-    background-color: rgb(20, 214, 20);
+    background-color: rgb(17, 28, 75);
     border: 0px solid red;
     border-radius: 10px;
-    padding: 30px 20px;
+    padding: 20px 20px;
 }
 #start-button:hover{
     cursor: pointer;
-    background-color: green;
+    background-color: rgb(138, 12, 12);
 }
 .restart{
     color: white;
-    background-color: lightblue;
+    background-color: skyblue;
     border: 0px solid red;
     border-radius: 10px;
-    padding: 20px 15px;
+    padding: 10px 15px;
 }
 .restart:hover{
     cursor: pointer;
-    background-color: skyblue;
+    background-color: rgba(111, 181, 199, 0.719);
+}
+.slot{
+    border: 1px solid black;
+    height: 48px;
+    width: 46px;
+}
+.slot:hover{
+    cursor: pointer;
 }
 .grid div {
-    height: 40px;
-    width: 40px;
+    display: all;
 }
 .card{
     display: none;
@@ -65,16 +73,33 @@
     background-size: cover;
     border-radius: 20px;
 }
-
 .player-two {
     background-image: url("./images/red connect four piece.jpg");
     background-size: cover;
     border-radius: 20px;
 }
-body {
+body{    
     color: white;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    background: rgb(90, 94, 95);
+    background: rgb(92, 0, 5);
+}
+h2 {
+    color: royalblue;
+}
+h1{
+    color: rgba(179, 25, 25, 0.562);
+    background: skyblue;
+    border: 2px double lightsalmon;
+    padding: 10px;
+}
+h3{
+    color: #984359;
+}
+a{
+    color: blue;
+}
+p{
+    color: grey;
 }

@@ -104,7 +104,7 @@ document.addEventListener('DOMContentLoaded', () => {
             result.innerHTML = 'two you WON!'
             card.setAttribute('class', 'card')
             congrats.setAttribute('class', 'congrats-seen')
-        }
+        } 
     }
     }
 
@@ -124,8 +124,6 @@ document.addEventListener('DOMContentLoaded', () => {
                     currentPlayer = 1
                     displayPlayer.innerHTML = currentPlayer
                 }
-            }else {
-                alert('cant go here')
             }
             getResult()
         }
